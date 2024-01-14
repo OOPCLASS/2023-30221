@@ -1,0 +1,103 @@
+<mxfile host="Electron" modified="2023-11-06T19:58:57.257Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="pErR2o6OocTpto0IO968" version="22.0.3" type="device">
+  <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
+    <mxGraphModel dx="1572" dy="1000" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#FF0000" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-37" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" parent="1" source="FggOMCOXzOqpzpVjOqhZ-24" target="FggOMCOXzOqpzpVjOqhZ-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-24" value="Customer" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;fontFamily=Times New Roman;fontStyle=1;align=center;fillStyle=solid;" parent="1" vertex="1">
+          <mxGeometry x="20" y="50" width="430" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-26" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="FggOMCOXzOqpzpVjOqhZ-24" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="120" as="sourcePoint" />
+            <mxPoint x="430" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-29" value="&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 12px;&quot;&gt;-customerID: String&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 12px;&quot;&gt;-name: String&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 12px;&quot;&gt;-contactInfo: String&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 12px;&quot;&gt;-accounts: BankAccount[]&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="FggOMCOXzOqpzpVjOqhZ-24" vertex="1">
+          <mxGeometry x="10" y="30" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-32" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;+createNewAccount(accountNumber: String, accountType: String, amount: float): void&lt;br&gt;&lt;/font&gt;+newTransactions(staff: BankStaff, transactionID: String, sourceAccount: BankAccount, destination account: BankAccount, transactionType: TransactionType, amount: float): void&lt;br&gt;+accountBalance(): void&lt;br&gt;//getter &amp;amp; setter&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="FggOMCOXzOqpzpVjOqhZ-24" vertex="1">
+          <mxGeometry y="120" width="430" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-33" value="BankAccount" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;fontFamily=Times New Roman;fontStyle=1;align=center;fillStyle=solid;" parent="1" vertex="1">
+          <mxGeometry x="650" y="50" width="430" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-34" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="FggOMCOXzOqpzpVjOqhZ-33" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="120" as="sourcePoint" />
+            <mxPoint x="430" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-35" value="&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 12px;&quot;&gt;-customer: Customer&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 12px;&quot;&gt;-accountNumber: String&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 12px;&quot;&gt;-accountType: String&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 12px;&quot;&gt;-amount: float&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 12px;&quot;&gt;-transactions: Transactions[]&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="FggOMCOXzOqpzpVjOqhZ-33" vertex="1">
+          <mxGeometry x="10" y="30" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-36" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;+addTransactions(transaction: Transaction): void&lt;/font&gt;&lt;br&gt;//getter &amp;amp; setter&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="FggOMCOXzOqpzpVjOqhZ-33" vertex="1">
+          <mxGeometry y="130" width="420" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-57" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=60;endSize=8;endArrow=diamond;endFill=0;" parent="1" source="FggOMCOXzOqpzpVjOqhZ-38" target="FggOMCOXzOqpzpVjOqhZ-53" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-38" value="Transaction" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;fontFamily=Times New Roman;fontStyle=1;align=center;fillStyle=solid;" parent="1" vertex="1">
+          <mxGeometry x="20" y="370" width="450" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-39" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="FggOMCOXzOqpzpVjOqhZ-38" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="130" as="sourcePoint" />
+            <mxPoint x="450" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-40" value="&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 12px;&quot;&gt;-customer: Customer&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 12px;&quot;&gt;-staff: BankStaff&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 12px;&quot;&gt;-transactionID: String&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 12px;&quot;&gt;-sourceAccount: BankAccount&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 12px;&quot;&gt;-destinationAccount:BankAccount&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 12px;&quot;&gt;-transactionType: TransactionType&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;-amount: float&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="FggOMCOXzOqpzpVjOqhZ-38" vertex="1">
+          <mxGeometry x="10" y="30" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-41" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;+Transaction(customer: customer, staff: BankStaff, transactionID: String, sourceAccount: BankAccount, destinationAccount: BankAccount, transactiontype: TransactionType, amount: float)&lt;/font&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="FggOMCOXzOqpzpVjOqhZ-38" vertex="1">
+          <mxGeometry y="130" width="450" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-42" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;entryX=0.488;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="239.94693964371166" y="269.56" as="sourcePoint" />
+            <mxPoint x="239.7599999999999" y="369.99999999999994" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-53" value="BankStaff" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;fontFamily=Times New Roman;fontStyle=1;align=center;fillStyle=solid;" parent="1" vertex="1">
+          <mxGeometry x="650" y="370" width="440" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-54" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="FggOMCOXzOqpzpVjOqhZ-53" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="130" as="sourcePoint" />
+            <mxPoint x="439" y="129" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-55" value="&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; background-color: initial;&quot;&gt;-staffID: String&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 12px;&quot;&gt;-name: String&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 12px;&quot;&gt;-position: String&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="FggOMCOXzOqpzpVjOqhZ-53" vertex="1">
+          <mxGeometry x="10" y="30" width="110" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-56" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;+BankStaff(staff: String, name: String, position: String)&lt;br&gt;&lt;/font&gt;//getter &amp;amp; setter&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="FggOMCOXzOqpzpVjOqhZ-53" vertex="1">
+          <mxGeometry x="-3" y="130" width="440" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-58" value="TransactionType" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;fontFamily=Times New Roman;fontStyle=1;align=center;fillStyle=solid;" parent="1" vertex="1">
+          <mxGeometry x="20" y="640" width="450" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-59" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="FggOMCOXzOqpzpVjOqhZ-58" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="110" as="sourcePoint" />
+            <mxPoint x="450" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-60" value="&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;+enum(DEPOSIT, WITHDRAW, TRANSATCION)&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="FggOMCOXzOqpzpVjOqhZ-58" vertex="1">
+          <mxGeometry x="10" y="30" width="350" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-63" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="470" as="sourcePoint" />
+            <mxPoint x="140" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FggOMCOXzOqpzpVjOqhZ-64" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;dashed=1;" parent="1" source="FggOMCOXzOqpzpVjOqhZ-41" target="FggOMCOXzOqpzpVjOqhZ-58" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

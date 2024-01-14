@@ -1,6 +1,5 @@
 # Ignore compiled Java classes and JAR files
 *.class
-*.jar
 
 # Ignore IntelliJ IDEA files
 .idea/
@@ -17,3 +16,7 @@ target/
 # Ignore operating system files
 .DS_Store
 Thumbs.db
+
+# Ignore VS Code files
+.vscode
+README.md
