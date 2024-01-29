@@ -13,21 +13,30 @@ public class CalculatorTest {
   }
 
   @Test
+  public void testAddOneToMaxLong() {
+    Calculator calculator = new Calculator();
+
+    Long result = calculator.add(Long.MAX_VALUE, 1L);
+
+    Assertions.assertEquals(0L, result);
+  }
+
+  @Test
   public void testAddFirstParamNull() {
     Calculator calculator = new Calculator();
 
-    Long result = calculator.add(null, 2L);
+    Long result = calculator.add(null, 1L);
 
-    Assertions.assertEquals(2L, result);
+    Assertions.assertEquals(1L, result);
   }
 
   @Test
   public void testAddSecondParamNull() {
     Calculator calculator = new Calculator();
 
-    Long result = calculator.add(2L, null);
+    Long result = calculator.add(1L, null);
 
-    Assertions.assertEquals(2L, result);
+    Assertions.assertEquals(1L, result);
   }
 
   @Test

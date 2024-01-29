@@ -10,6 +10,9 @@ public class Calculator {
     if (b == null) {
       return a;
     }
+    if (a > 0 && b > 0 && a + b < 0) {
+      return 0L;
+    }
     return a + b;
   }
 }
